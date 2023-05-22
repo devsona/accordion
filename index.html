@@ -4,72 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Cards</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <section id="main">
-        <section id="faq-container">
-            <section id="woman-img-container-section">
-                <div id="woman-img-container">
-                    <img id="woman-img"         src="illustration-woman-online-mobile.svg" alt="Woman">
-                    <img id='woman-bg'          src="bg-pattern-mobile.svg" alt="">
-                    <img id='box' src="illustration-box-desktop.svg" alt="box">
-                    <img id='woman-img-desktop' src="illustration-woman-online-desktop.svg" alt="">
-                    <img id='desk-bg'src="bg-pattern-desktop.svg" alt="bg">
+    <section>
+    <header>
+        <nav>
+        <img class='logo' src="logo.svg" alt="logo">
+        <h1 class="body-mass-h1">Body Mass Index Calculator</h1>
+        <p class="nav-p">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+        </nav>
+    </header>
+    <section id="bmi-container">
+        <div id="bmi-space">
+        <h2 id="details-h2">Enter Youre Details Below</h2>
+                <form id="radio-container">
+                <div>
+                    <input type="radio" name="unit" value="metric" id="metric">
+                    <label for="metric" class="radio-label" checked="true" id="metric">Metric</label>
                 </div>
-            </section>
-        <section id="questions-container">
-            <h1>FAQ</h1>
-            <div class="text-container" id="first-q">
-                <h3 id="first-heading">How many team members can i invite?</h3>
-                <img class='arrow' src="icon-arrow-down.svg" alt="arrow" id="first-arrow">
-                <div id="first-answer" class="answer">
-                    <p id="first-p" class="answer-p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                <div>
+                    <input type="radio" name="unit" value="imperial">
+                    <label for="imperial" class="radio-label">Imperial</label>
+                </div>
+                </form>
+            <div id="wxh-container">
+                <p>height</p>
+                <input type="number" class="wxh" placeholder="CM" id="cm" min="1" max="300">
+                <p>weight</p>
+                <input type="number" class="wxh" placeholder="KG" id="weight" min="1" max="999">
+            </div>
+                <div id="bmi-answer-container">
+                    <p id="bmi-answer-p-heading">Your BMI is...</p>
+                    <h2 id="bmi-answer">0.00</h2>
+                    <p id="bmi-answer-p-ending">Add your weight and height details to recive more information about your bmi.Or scroll down to learn more!</p>
                 </div>
             </div>
-            <hr>
-            <div class="text-container" id="second-q">
-                <h3 id="second-heading">What is the maximum upload size?</h3>
-                <img class='arrow' src="icon-arrow-down.svg" alt="arrow" id="second-arrow">
-                <div id="second-answer" class="answer">
-                    <p id="second-p" class="answer-p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="text-container" id="third-q">
-                <h3 id="third-heading">How do i reset my password?</h3>
-                <img class='arrow' src="icon-arrow-down.svg" alt="arrow" id="third-arrow">
-                <div id="third-answer" class="answer">
-                    <p id="third-p" class="answer-p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="text-container" id="fourth-q">
-                <h3 id="fourth-heading">Can i cancel my subscription?</h3>
-                <img class='arrow' src="icon-arrow-down.svg" alt="arrow" id="fourth-arrow">
-                <div id="fourth-answer" class="answer">
-                    <p id="fourth-p" class="answer-p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="text-container" id="fifth-q">
-                <h3 id="fifth-heading">Do you provide any additional support?</h3>
-                <img class='arrow' src="icon-arrow-down.svg" alt="arrow" id="fifth-arrow">            
-                <div id="fifth-answer" class="answer">
-                    <p id="fifth-p" class="answer-p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-                </div>
-            </div>
-            <hr>
-        </section>
-        </section>
-        </section>
-    </main>
-    <script src="index.js"></script>
     
+        </section>
+    </section>
+    <section id="bmi-meaning-container">
+            <img src="image-man-eating.webp" alt="Man eating" width="100%">
+            <div id="bmi-meaning-container-text">
+            <h2>What your BMI result means</h2>
+            <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
+            </div>
+    </section>
+    <section id="icons-section">
+        <div class="icons-container">
+            <img  class='icon' src="icon-eating.svg" alt="">
+            <div>
+            <h3>Healthy eating</h3>
+            <p>Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</p>
+            </div>
+        </div>
+        <div class="icons-container">
+            <img  class='icon' src="icon-exercise.svg" alt="">
+            <div>
+            <h3>Regular exercise</h3>
+            <p>Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.</p>
+            </div>
+        </div>
+        <div class="icons-container">
+            <img src="icon-sleep.svg" alt="">
+            <div>
+            <h3>Adequate sleep</h3>
+            <p>Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</p>
+            </div>
+        </div>
+    </section>
+    <section id="limit-section">
+        <div id="limit-heading-container">
+        <h2>Limitations of BMI</h2>
+        <p>Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
+        </div>
+        <div class="limit-cards">
+            <div>
+            <img src="icon-gender.svg" alt="gender icon">
+            <h3>Gender</h3>
+            </div>
+            <p>The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.</p>
+        </div>
+        <div class="limit-cards">
+            <div>
+            <img src="icon-age.svg" alt="age icon">
+            <h3>Age</h3>
+            </div>
+            <p>In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.</p>
+        </div>
+        <div class="limit-cards">
+            <div>
+                <img src="icon-muscle.svg" alt="muscle icon">
+                <h3>Muscle</h3>
+            </div>
+            <p>BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.</p>
+        </div>
+        <div class="limit-cards">
+            <div>
+                <img src="icon-pregnancy.svg" alt="icon pregnancy">
+                <h3>Pregnancy</h3>
+            </div>
+            <p>Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.</p>
+        </div>
+        <div class="limit-cards">
+            <div>
+                <img src="icon-race.svg" alt="Human icon">
+                <h3>Race</h3>
+            </div>
+            <p>Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.</p>
+        </div>
+    </section>
+    <script src="index.js" type="module" async></script>
 </body>
 </html>
